@@ -3,7 +3,7 @@ resource "aws_instance" "vm01" {
   instance_type = "t2.micro"
   availability_zone = "us-east-1d"
   tags = {
-    name = "tfcloud01"
+    name = var.serverName
   }
 }
 
